@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".AddTopLectureActivity">
+
+    <EditText
+        android:id="@+id/video_id_textview"
+        android:layout_width="match_parent"
+        android:hint="Enter video id"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/verify_id_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:text="Verify ID"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/verified_layout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <EditText
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="title"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/description_textview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="description"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/author_textview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:hint="Author name"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/add_video_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="Add Video"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
